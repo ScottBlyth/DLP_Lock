@@ -10,9 +10,13 @@
 
 Uses the difficulty of the DLP problem to secure a passcode. 
 That is, 
-```latex C = g^{passcode || salt} (mod p)```
+
+```math $C = g^{passcode || salt} (mod p)$```
+
 where C is the passcode secured, and salt is randomly generely generated number who's length is known.
 C,p and the salt is then saved
 The passcode || salt is then given by:
-```latex passcode || salt =DLP(C, g, p)```
+
+```math $passcode || salt =DLP(C, g, p)$```
+
 The passcode is extracted by removing k bits where k is the length of the salt.
