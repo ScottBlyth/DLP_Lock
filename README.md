@@ -4,7 +4,7 @@
 
 ```pip install gmpy2``` 
 
-```pip install nprime
+```pip install nprime```
 
 ## Description 
 
