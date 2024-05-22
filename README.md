@@ -19,4 +19,4 @@ The passcode || salt is then given by:
 
 $$passcode || salt =DLP(C, g, p)$$
 
-The passcode is extracted by removing k bits where k is the length of the salt.
+The passcode is extracted by removing the last k bits where k is the length of the salt.
