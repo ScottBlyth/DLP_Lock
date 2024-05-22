@@ -8,12 +8,12 @@
 
 ## Description 
 
-Uses the difficulty of the DLP problem to secure a passcode. 
+Uses the difficulty of the DLP problem to "lock" a passcode. 
 That is, 
 
 $$C = g^{passcode || salt} (mod \ p)$$
 
-where C is the passcode secured, and salt is randomly generely generated number who's length is known.
+where C is the passcode locked, and salt is randomly generely generated number who's length is known.
 C,p and the salt is then saved
 The passcode || salt is then given by:
 
