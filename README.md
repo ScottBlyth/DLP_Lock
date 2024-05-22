@@ -14,7 +14,7 @@ That is,
 $$C = g^{passcode || salt} (mod \ p)$$
 
 where C is the passcode locked, and salt is randomly generely generated number who's length is known.
-C,p and the salt is then saved
+C,p and the length of the salt is then saved.
 The passcode || salt is then given by:
 
 $$passcode || salt =DLP(C, g, p)$$
