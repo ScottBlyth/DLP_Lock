@@ -59,9 +59,7 @@ def generate_prime_candidate(lower, upper):
 
 
 def is_sophie_germain(n):
-    if not miller_rabin(n):
-        return False 
-    return miller_rabin(2*n+1)
+    return miller_rabin(n) and miller_rabin(2*n+1)
     
 def generate_sophie_prime(n):
     random.seed(time.time())
@@ -81,7 +79,6 @@ def is_generator(g, sophie_prime):
     
 def generate_pk_key(n):
     prime = generate_sophie_prime(n)
-    
     # find generator
     g = 2
     while not is_generator(g, prime):
